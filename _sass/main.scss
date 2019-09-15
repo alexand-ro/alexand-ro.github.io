@@ -138,3 +138,33 @@ blockquote::after {
     right: 302px;
     top: 100%;
 }
+
+.FeaturedImgBanner {
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.TitleBanner {
+    color: white; // White text...
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5); // ...against a dark background
+    text-align: center;
+    padding: 10px;
+    height: 300px;
+    position: relative;
+}
+
+.TitleBanner--inverse {
+    color: black; // Here we have dark text
+    box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.75); // ...against a light background
+}
+
+#bannerContent {
+    margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-20%, -50%);
+}
