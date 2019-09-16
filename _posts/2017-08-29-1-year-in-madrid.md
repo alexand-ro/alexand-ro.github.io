@@ -1,5 +1,5 @@
 ---
-cover_image: /assets/images/2017-08-29-1-year-in-madrid.jpg
+image: /assets/images/2017-08-29-1-year-in-madrid.jpg
 ---
 Oh, Madrid, I'm writing this letter directly to you. This is the exact same place that I saw you for the first time. It was 1 year ago, on 29 august 2016, at 20:47, my airplane arrived in your airport from which I entered directly into your metro. I never saw the city, not even from the windows of the airport, I had no idea how you look like. I had some vague idea and expectations because you are the capital of Spain, the Kingdom that conquered so many countries and made your language the second most spoken in the world, but I still had no idea how you would look.
 
@@ -22,7 +22,7 @@ Practically, before even finishing the last year of university, I already had th
 
 So the question is: you created all of these things, you've put so much dedication in the things you do and you have so many stories to tell of what you did in Bucharest, and you're living everything behind by drawing a line and starting over in Madrid?
 
-Yes. One of my mantras in life is that you have to give up the good in order to have the great.
+Yes. One of my mantras in life is that **you have to give up the good in order to have the great**.
 
 > "I knew that at some point you are going to leave. It was inevitable. I will miss you."
 
@@ -52,8 +52,8 @@ Every single experience that I had during this year deserves it's own article an
 
 They say that life it's not about the amount of breaths you take, it's about the moments that take your breath away. This year I am grateful that I had accomplished more than I can recall on a simple thought. Madrid saw me grow and for sure enabled me to grow much faster than I would have done in any other place.
 
-I can say that in this past year every single day was a new adventure, nothing was the same and every single day deserves it's own headline. I got involved in so many things in parallel and although I got overwhelmed in some situations, I managed to get results in the rest and this brought me 365 days that didn't look like each other and minimum 365 achievements, smaller or bigger. I say minimum 365 because in some days I celebrated multiple "victories".
+I can say that in this past year **every single day was a new adventure**, nothing was the same and every single day deserves it's own headline. I got involved in so many things in parallel and although I got overwhelmed in some situations, I managed to get results in the rest and this brought me 365 days that didn't look like each other and minimum 365 achievements, smaller or bigger. I say minimum 365 because in some days I celebrated multiple "victories".
 
-It's a bit ironic that I'm celebrating 1 year of Madrid from Seattle, another amazing city in which I wanted to come for a long time. But after living and having so many memories here, I can proudly call Madrid: my home.
+It's a bit ironic that I'm celebrating 1 year of Madrid from Seattle, another amazing city in which I wanted to come for a long time. But after living and having so many memories here, I can proudly call Madrid: **my home**.
 
-*Note: The article was originally published on [Facebook Notes](https://www.facebook.com/notes/alex-petrache/1-year-in-madrid/1526590314064489/) and moved to alexand.ro on May 11, 2017.*
+*Note: The article was originally published on [Facebook Notes](https://www.facebook.com/notes/alex-petrache/1-year-in-madrid/1526590314064489/) and moved to alexand.ro on May 11, 2017. *

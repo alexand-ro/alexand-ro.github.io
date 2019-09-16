@@ -1,4 +1,7 @@
 permalink: /:year/:month/:title
+description: Pursuing the world of startups. Creating videos @<a href="https://www.youtube.com/playlist?list=PL_O27Ff-lt5A6oQa7LXQVsGiHzPIq1iwt">Jurnalul Unui Olimpic</a>. Ex-Software Engineer @Amazon.
+plugins:
+  - jekyll-seo-tag
 defaults:
   - scope:
       path: ""
@@ -9,3 +12,12 @@ defaults:
       path: ""
     values:
       layout: "default"
+social:
+  name: Alex Petrache
+  links:
+    - https://twitter.com/AlexIPetrache
+    - https://www.facebook.com/petrache.alex
+    - https://www.linkedin.com/in/alexpetrache
+    - https://github.com/AlexPetrache
+    - https://instagram.com/alexand.ro
+    - https://youtube.com/channel/UCQQwkvM9vQ6AEl1CfnEtdrQ
