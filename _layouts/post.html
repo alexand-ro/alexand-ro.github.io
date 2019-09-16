@@ -17,11 +17,11 @@ style="background-image: url({{ page.cover_image }});"
     <div class="content">{{ content }}</div>
 </article>
 
-<div class="page-navigation container">
+<article class="page-navigation container">
     {% if page.previous.url %}
         <a class="prev" href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a>
     {% endif %}
     {% if page.next.url %}
         <a class="next" href="{{page.next.url}}">{{page.next.title}} &raquo;</a>
     {% endif %}
-</div>
+</article>
