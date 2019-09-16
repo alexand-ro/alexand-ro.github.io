@@ -1,7 +1,39 @@
 ---
-title: Home
+title: Alex Petrache
 ---
-<h1>{{ "Hellogfd Wogfdgrld!" | downcase }}</h1>
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&autoLogAppEvents=1&version=v4.0&appId=317413601642964"></script>
+<script src="https://apis.google.com/js/platform.js"></script>
+<div class="container h-100">
+    <div id="intro" class="row justify-content-center align-items-center">
+        <div class="col-md-12">
+            <div class="row h-100 justify-content-center align-items-center">
+                <img src="/assets/images/alexandro_square.jpg" style="width: 100px; height: 100px; border-radius: 100px"/>
+            </div>
+            <div class="row h-100 justify-content-center align-items-center">
+                <span id="name">Alex Petrache</span>
+            </div>
+            <div class="row h-100 justify-content-center align-items-center">
+                <span id="description">
+                    Creator @<a href="https://www.youtube.com/playlist?list=PL_O27Ff-lt5A6oQa7LXQVsGiHzPIq1iwt">Jurnalul Unui Olimpic</a>
+                </span>
+            </div>
+            <div class="row h-100 justify-content-center align-items-center" id="followSection">
+                <div class="d-flex flex-row justify-content-center  align-items-center" style="width: 75%;">
+                    <div class="p-2">
+                        <div class="g-ytsubscribe" data-channelid="UCQQwkvM9vQ6AEl1CfnEtdrQ" data-layout="default" data-count="default"></div>
+                    </div>
+                    <div class="p-2 align-self-center" style="margin-bottom: 9px">
+                        <div class="fb-like" data-href="https://www.facebook.com/alexand.ro.writings/" data-width="" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+                    </div>
+                    <div class="p-2">
+                        <a href="https://twitter.com/alexipetrache?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-screen-name="false" data-show-count="true">Follow @alexipetrache</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 {% for post in site.posts %}
   <a href="{{ post.url }}">
@@ -9,7 +41,8 @@ title: Home
       <div class="TitleBanner">
         <div id="bannerContent">
           <h1>{{ post.title }}</h1>
-          {{ post.excerpt | truncate: 270 }}
+          <div class="date">{{ post.date | date: "%B %d • %Y" }}</div>
+          {{ post.excerpt | strip_html | truncate: 270 }}
         </div>
       </div>
     </div>
