@@ -154,6 +154,24 @@ blockquote::after {
     }
 }
 
+.page-navigation {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    overflow: auto;
+}
+
+.page-navigation .prev {
+    float: left;
+    width: 50%;
+    text-align: left;
+}
+
+.page-navigation .next {
+    float: right;
+    width: 50%;
+    text-align: right;
+}
+
 .FeaturedImgBanner {
     background-size: cover;
     background-position: center;
