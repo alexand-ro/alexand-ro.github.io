@@ -105,7 +105,6 @@ article .content {
     -webkit-font-smoothing: antialiased;
 }
 
-
 blockquote {
     color: #7f7f7f;
     font-family: 'Hoefler Text', Georgia, serif;
@@ -140,11 +139,27 @@ blockquote::after {
     top: 100%;
 }
 
+@media only screen and (max-width: 600px) {
+    blockquote {
+        font-size: 30px;
+        padding: 10px;
+    }
+    blockquote::before {
+        left: 140px;
+        right: 140px;
+    }
+    blockquote::after {
+        left: 140px;
+        right: 140px;
+    }
+}
+
 .FeaturedImgBanner {
     background-size: cover;
     background-position: center;
     margin-bottom: 20px;
     display: block;
+    box-shadow: 0px 0px 4px 2px #ccc;
 }
 
 .TitleBanner {
@@ -159,6 +174,7 @@ blockquote::after {
     height: 350px;
     position: relative;
     font-family: Georgia, serif;
+    overflow: hidden;
 }
 
 .TitleBanner:hover {
@@ -198,13 +214,25 @@ blockquote::after {
     font-size: 12px;
 }
 
+@media only screen and (max-width: 600px) {
+    #bannerContent {
+        left: 10%;
+        transform: translate(-5%, -50%);
+        font-size: 14px;
+    }
+
+    #bannerContent h1 {
+        font-size: 2em;
+    }
+}
+
 #intro{
     margin-top: 50px;
     padding-top: 50px;
     padding-bottom: 50px;
     box-shadow: 0px 0px 6px 3px #ccc;
     margin: 0;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 #intro a{
@@ -221,6 +249,41 @@ blockquote::after {
     margin-bottom: 10px;
 }
 
+.flex-container {
+    -webkit-column-count:3;
+    -webkit-column-gap:0;
+    max-width: 430px;
+    margin: 0 auto;
+}
+.flex-container .item {
+    text-align: center;
+}
+
+.flex-container .third {
+    padding-top: 12px;
+}
+
+/* Too narrow to support three columns */
+@media all and (max-width: 640px) {
+    .flex-container {
+        -webkit-column-count:1;
+    }
+    .item {
+        padding-bottom: 10px;
+    }
+    .flex-container .first {
+        padding-bottom: 0px;
+    }
+    .flex-container .third {
+        padding-top: 0px;
+    }
+}
+
+@media all and (max-width: 360px) {
+    .flex-container {
+        -webkit-column-count:1;
+    }
+}
 
 //footer
 #footer {
@@ -229,7 +292,6 @@ blockquote::after {
     padding: 50px;
     user-select: none;
     text-align: center;
-    margin-top: 50px;
 }
 #footer .copyright {
     color: #90949c;
