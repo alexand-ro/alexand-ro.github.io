@@ -200,7 +200,11 @@ blockquote::after {
 
 #intro{
     margin-top: 50px;
+    padding-top: 50px;
     padding-bottom: 50px;
+    box-shadow: 0px 0px 6px 3px #ccc;
+    margin: 0;
+    margin-bottom: 50px;
 }
 
 #intro a{
@@ -215,4 +219,102 @@ blockquote::after {
 #intro #description {
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+
+//footer
+#footer {
+    position: relative;
+    box-shadow: 0px 0px 6px 3px #ccc;
+    padding: 50px;
+    user-select: none;
+    text-align: center;
+    margin-top: 50px;
+}
+#footer .copyright {
+    color: #90949c;
+    text-align: center;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 10px;
+    display: block;
+}
+.social-btns .btn,
+.social-btns .btn:before,
+.social-btns .btn .fa {
+  transition: all 0.35s;
+  transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
+}
+.social-btns .btn:before {
+  top: 90%;
+  left: -110%;
+}
+.social-btns .btn .fa {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+.social-btns .btn.email:before {
+    background-color: blue;
+}
+.social-btns .btn.facebook:before {
+  background-color: #3b5998;
+}
+.social-btns .btn.twitter:before {
+  background-color: #3cf;
+}
+.social-btns .btn.youtube:before {
+  background-color: #dc4a38;
+}
+.social-btns .btn.instagram:before {
+  background-color: #C13584;
+}
+.social-btns .btn.linkedin:before {
+  background-color: #00aff0;
+}
+.social-btns .btn.github:before {
+  background-color: #000;
+}
+.social-btns .btn:focus:before,
+.social-btns .btn:hover:before {
+  top: -10%;
+  left: -10%;
+}
+.social-btns .btn:focus .fa,
+.social-btns .btn:hover .fa {
+  color: #fff;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+.social-btns {
+  height: 50px;
+  margin: auto;
+  font-size: 0;
+  text-align: center;
+  display: inline-table;
+}
+.social-btns .btn {
+    display: inline-block;
+    background-color: #fff;
+    width: 40px;
+    height: 40px;
+    line-height: 35px;
+    margin: 0 10px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 100%;
+    opacity: 0.99;
+    padding: 0;
+    color: #90949c;
+}
+.social-btns .btn:before {
+  content: '';
+  width: 120%;
+  height: 120%;
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.social-btns .btn .fa {
+    font-size: 20px;
+    vertical-align: middle;
 }
