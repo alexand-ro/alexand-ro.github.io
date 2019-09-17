@@ -3,10 +3,14 @@ layout: default
 ---
 
 <header
-{% if page.image %}
-class="post-cover"
-style="background-image: url({{ page.image }});"
-{% endif %}
+    {% if page.image %}
+        class="post-cover 
+        {% if page.mobile-cover %}
+            post-cover-mobile
+        {% endif %}
+        "
+        style="background-image: url({{ page.image }});"
+    {% endif %}
 >
 <div class="icon-scroll"></div>
 </header>

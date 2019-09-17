@@ -1,5 +1,6 @@
 ---
 image: /assets/images/2017-08-29-1-year-in-madrid.jpg
+mobile-cover: true
 ---
 Oh, Madrid, I'm writing this letter directly to you. This is the exact same place that I saw you for the first time. It was 1 year ago, on 29 august 2016, at 20:47, my airplane arrived in your airport from which I entered directly into your metro. I never saw the city, not even from the windows of the airport, I had no idea how you look like. I had some vague idea and expectations because you are the capital of Spain, the Kingdom that conquered so many countries and made your language the second most spoken in the world, but I still had no idea how you would look.
 
