@@ -2,7 +2,7 @@ permalink: /:year/:month/:title
 title: Alex Petrache
 email: hello@alexand.ro
 description: Pursuing the world of startups. Creating videos @<a href="https://www.youtube.com/playlist?list=PL_O27Ff-lt5A6oQa7LXQVsGiHzPIq1iwt">Jurnalul Unui Olimpic</a>. Ex-Software Engineer @Amazon.
-url: "http://alexand.ro"
+url: "https://alexand.ro"
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
