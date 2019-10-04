@@ -1,5 +1,5 @@
 ---
-image: /assets/images/2018-12-24-Do-you-ever-miss-home.jpg
+image: /assets/images/2018-12-24-do-you-ever-miss-home.jpg
 title: '"Do You Ever Miss Home?"'
 ---
 I’ve been asked this question quite a few times now. The picture above represents the center and University of Bucharest where I have studied computer science. I was there for a few days in October and I wanted to rent a place that has the view composed of the landmarks that witnessed my passion, hustle, determination, enthusiasm and desperation every time I was walking around them.
