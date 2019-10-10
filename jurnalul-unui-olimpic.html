@@ -1,0 +1,87 @@
+---
+layout: default
+title: Jurnalul Unui Olimpic
+date: 2018-05-13
+image: /assets/images/jurnalul-unui-olimpic-cover.jpg
+description: O serie de episoade în care prezint cele mai importante lecții despre concursurile de informatică, facultate, voluntariat, start-up-uri, angajatul din facultate și lucrarea la cele mai mari companii din Silicon Valley.
+mobile-cover: true
+---
+
+<script type="application/ld+json">{
+    "@context": "http://schema.org",
+    "@type": "TVSeries",
+    "url": "/jurnalul-unui-olimpic",
+    "name": "Jurnalul Unui Olimpic",
+    "image": "https://alexand.ro/assets/images/jurnalul-unui-olimpic-cover.jpg",
+    "genre": [
+      "Documentary"
+    ],
+    "actor": [
+      {
+        "@type": "Person",
+        "url": "https://alexand.ro",
+        "name": "Alex Petrache"
+      }
+    ],
+    "creator": [
+      {
+        "@type": "Person",
+        "url": "https://alexand.ro",
+        "name": "Alex Petrache"
+      }
+    ],
+    "description": "O serie de episoade în care prezint cele mai importante lecții despre concursurile de informatică, facultate, voluntariat, start-up-uri, angajatul din facultate și lucrarea la cele mai mari companii din Silicon Valley.",
+    "datePublished": "2018-05-13",
+    "keywords": "journal, documentary, university, contests, computers, success",
+    "inLanguage": "ro",
+    "numberOfSeasons": 1,
+    "numberOfEpisodes": 8
+  }</script>
+
+<header
+    {% if page.image %}
+        class="post-cover 
+        {% if page.mobile-cover %}
+            post-cover-mobile
+        {% endif %}
+        "
+        style="background-image: url({{ page.image }});"
+    {% endif %}
+>
+<div class="icon-scroll"></div>
+</header>
+
+<article role="article" class="container">
+    <h1 class="title">{{ page.title }}</h1>
+    <div class="date">{{ page.date | date: "%B %d • %Y" }}<p><a href="#romanian">Romanian</a> • <a href="#english">English</a></p></div>
+    <div class="content">
+        <h4 id="romanian">Romanian 🇷🇴</h4>
+        <p id="romanian">O serie de episoade în care prezint cele mai importante lecții despre concursurile de informatică, facultate, voluntariat, start-up-uri, angajatul din facultate și lucrarea la cele mai mari companii din Silicon Valley. </p>
+        <p>Madrid - 13 Mai 2018. alexand.ro lansează “Jurnalul unui Olimpic”, jurnal video ce vine ca răspuns celor mai des întâlnite probleme către succes.</p>
+        <p>Acum fix 6 ani fructificam pasiunea și efortul depus în informatică câștigând naționala ce avea să dea start-ul unui drum cu ambiții din ce în ce mai mari.</p>
+        <p>Am întâlnit probleme și blocaje, la mine sau în general, precum: teama de a prezenta un proiect, alegerea liceului/facultății, presiunea de la familie/părinti, alegerea drumului în viață, admiterea la facultate, teama de a participa sau lipsa progresului în concursuri, ce reprezintă și ce nu voluntariatul, crearea unui start-up (afacere), angajatul din facultate și interviurile la cele mai mari companii din lume.</p>
+        <p>Vom putea afla răspunsurile și abordările la toate aceste probleme în formatul unui jurnal video ce va avea un număr finit de episoade. Seria poate fi găsită pe <a href="https://www.youtube.com/playlist?list=PL_O27Ff-lt5A6oQa7LXQVsGiHzPIq1iwt">YouTube</a>.</p>
+        <p>Pentru a putea fi la curent cu noile episoade, vă recomand abonarea la canalul de <a href="https://youtube.com/channel/UCQQwkvM9vQ6AEl1CfnEtdrQ">YouTube</a> dacă aveți cont activ acolo, pe pagina de <a href="https://www.facebook.com/alexand.ro.writings/">Facebook</a> sau chiar aici pe blog.</p>
+        <p>Nu uitați să lăsați comentarii cu toate întrebările pe care le aveți, voi încerca să le adresez pe toate, fie prin comentarii, fie în video.</p>
+        <p>Sper ca această serie să ajute și să ajungă la cat cât mai multe persoane posibile.</p>
+        <p>Mulțumesc,<br>
+        Alex</p>
+        
+        <hr>
+        <h4 id="english">English 🇬🇧</h4>
+        <p>“Jurnalul Unui Olimpic” consists in a new video series where I talk about the most important lessons in winning contests, hackathons, going to university, being a volunteer, creating a start-up, getting a job as a programmer during university years and applying for the top companies in Silicon Valley.</p>
+        <p>As much as I would wish to make this in English, I want this series to be as personal and helpful as possible, that means that I will need to narrow my focus and subjects to a specific country’s educational and value system instead of giving general lessons that applies for a broader audience. That would be another amazing project by itself though.</p>
+        <p>This series is mainly for people living in Romania and I’m grateful that I can make this, but if some of the lessons presented in the videos can be applied outside of this context, I will translate most of them in the video descriptions/captions, like <a href="https://www.youtube.com/watch?v=lJZT3WHYo2k">this one</a>.</p>
+
+        <hr>
+
+        <h2 id="episoade">Episoade • Episodes</h2>
+
+        {% include youtubePlayer.html id="vV-lfGX__YA" %}
+        {% include youtubePlayer.html id="OeaGMjb8fXo" %}
+        {% include youtubePlayer.html id="w8RIZWTP35s" %}
+
+        <p>Restul episoadelor pot fi accesate în playlist-ul: <a href="https://www.youtube.com/playlist?list=PL_O27Ff-lt5A6oQa7LXQVsGiHzPIq1iwt">Jurnalul Unui Olimpic</a>.</p>
+        <br>
+    </div>
+</article>

@@ -1,7 +1,7 @@
 permalink: /:year/:month/:title
 title: Alex Petrache
 email: hello@alexand.ro
-description: Pursuing the world of startups. Creating videos @<a href="https://www.youtube.com/playlist?list=PL_O27Ff-lt5A6oQa7LXQVsGiHzPIq1iwt">Jurnalul Unui Olimpic</a>. Ex-Software Engineer @Amazon.
+description: Pursuing the world of startups. Creating videos @<a href="/jurnalul-unui-olimpic">Jurnalul Unui Olimpic</a>. Ex-Software Engineer @Amazon.
 url: "https://alexand.ro"
 twitter:
   username: "AlexIPetrache"
