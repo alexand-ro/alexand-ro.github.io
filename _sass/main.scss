@@ -336,7 +336,6 @@ blockquote::after {
 
 #intro #description {
     margin-top: 10px;
-    margin-bottom: 10px;
     max-width: 530px;
     text-align: center;
     width: 70%;
@@ -388,6 +387,26 @@ blockquote::after {
     .flex-container {
         -webkit-column-count:1;
     }
+}
+
+.item#youtube {
+    height: 24px;
+}
+
+::-webkit-input-placeholder {
+    text-align: center;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+    text-align: center;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+    text-align: center;
+}
+
+:-ms-input-placeholder {
+    text-align: center;
 }
 
 //footer
