@@ -1,8 +1,9 @@
 permalink: /:year/:month/:title
 title: Alex Petrache
-author: Alex Petrache
-email: hello@alexand.ro
-description: Pursuing the world of startups. Creating videos @<a href="/jurnalul-unui-olimpic">Jurnalul Unui Olimpic</a>. Ex-Software Engineer @Amazon.
+author: 
+  name: Alex Petrache
+  email: hello@alexand.ro
+description: Pursuing the world of startups. Creating videos @Jurnalul Unui Olimpic. Ex-Software Engineer @Amazon.
 url: "https://alexand.ro"
 twitter:
   username: "AlexIPetrache"
