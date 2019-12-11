@@ -422,23 +422,14 @@ blockquote::after {
 .social-btns .btn.email:before {
     background-color: blue;
 }
-.social-btns .btn.facebook:before {
-  background-color: #3b5998;
-}
-.social-btns .btn.twitter:before {
-  background-color: #3cf;
-}
 .social-btns .btn.youtube:before {
   background-color: #dc4a38;
-}
-.social-btns .btn.instagram:before {
-  background-color: #C13584;
 }
 .social-btns .btn.linkedin:before {
   background-color: #00aff0;
 }
-.social-btns .btn.github:before {
-  background-color: #000;
+.social-btns .btn.rss:before {
+    background-color: #EE802F;
 }
 .social-btns .btn:focus:before,
 .social-btns .btn:hover:before {
