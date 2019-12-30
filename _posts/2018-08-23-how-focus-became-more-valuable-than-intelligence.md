@@ -60,3 +60,35 @@ You need to have enough respect for yourself to have your own identity that peop
 I have friends/mentors which I cannot speak every day, week or month, but I know them and they know me, we are aware of where we are heading and think about each other, we don't need to ask "how are you" because we already know the answer, and when we finally meet, we may be a bit sad that it was a long time, but we are much more happy because we know that we accomplished amazing things which we want to share.
 
 You can be the most intelligent person on earth, if you don't have the focus which will enable you to use that intelligence, then the potential is gone.
+
+<hr>
+
+<i><b>Edit 30 December 2019:</b> This article reached <a href="https://news.ycombinator.com/item?id=21906727">first page of hacker news</a> since last night, if you want to receive a summary of what happened next, then please subscribe or follow me on Twitter:</i>
+<div class="row h-100 justify-content-center align-items-center">
+    <div>
+    <!-- Begin Mailchimp Signup Form -->
+        <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+        <style type="text/css">
+        #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
+        /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+            We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+        </style>
+        <div id="mc_embed_signup">
+        <form action="https://alexand.us4.list-manage.com/subscribe/post?u=7d57c5cb9a6eb44e87dee3649&amp;id=d9a14e3f32" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <div id="mc_embed_signup_scroll">
+            <input style="width: auto; font-size:14px;" type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Your email address" required>
+            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_7d57c5cb9a6eb44e87dee3649_d9a14e3f32" tabindex="-1" value=""></div>
+            <div class="clear"><input type="submit" value="Get updates" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+            </div>
+        </form>
+        </div>
+
+    <!--End mc_embed_signup-->
+    </div>
+</div>
+<div class="row h-100 justify-content-center align-items-center">
+    <div class="item">
+        <a href="https://twitter.com/alexipetrache?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-screen-name="false" data-show-count="true">Follow @alexipetrache</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+</div>
