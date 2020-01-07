@@ -14,3 +14,7 @@
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
     crossorigin="anonymous"></script>
 <script type='text/javascript' src='/assets/js/myscripts.js'></script>
+
+{% if jekyll.environment == 'production' %}
+    {% include analytics_statcounter.html %}
+{% endif %}
