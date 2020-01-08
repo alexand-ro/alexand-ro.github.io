@@ -29,3 +29,9 @@ layout: default
         <a class="next" href="{{page.next.url}}">{{page.next.title}} &raquo;</a>
     {% endif %}
 </article>
+
+{% if page.image %}
+    {% assign photo_title_size = page.image.size | minus: 30 %}
+    {% assign photo_title = page.image | slice: 26, photo_title_size | replace: '-', ' ' | append: ' Cover alexand.ro Alex Petrache' %}
+    <img style="display: none;" src="{{ page.image }}" title="{{photo_title}}" alt="{{photo_title}}">
+{% endif %}
