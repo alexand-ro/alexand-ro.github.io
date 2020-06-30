@@ -21,6 +21,12 @@ layout: default
     <div class="content">{{ content }}</div>
 </article>
 
+<article class="social-article container">
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v7.0" nonce="IryMFsgv"></script>
+    <div class="fb-like" data-href="https://alexand.ro{{page.url}}" data-width="" data-layout="button_count" data-action="like" data-size="small" data-share="false"></div>
+</article>
+
 <article class="page-navigation container">
     {% if page.previous.url %}
         <a class="prev" href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a>
