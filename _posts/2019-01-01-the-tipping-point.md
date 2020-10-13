@@ -1,5 +1,6 @@
 ---
 image: /assets/images/2019-01-01-the-tipping-point.jpg
+ypos: 16
 ---
 As of 1st of January 2019, I am taking action on the decision to accelerate the progress towards my vision of creating a positive impact upon the world through the world of startups by leaving Amazon after working 2 years and 4 months as a Software Engineer.
 

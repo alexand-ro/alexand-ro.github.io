@@ -1,16 +1,17 @@
 ---
-title: Alex Petrache • alexand.ro
+title: alexand.ro
 image: /assets/images/alexandro_alex_petrache.jpg
+regenerate: true
 ---
 <script src="https://apis.google.com/js/platform.js"></script>
 
 <div id="intro" class="row justify-content-center align-items-center">
     <div class="col-md-12">
         <div class="row h-100 justify-content-center align-items-center">
-            <img id="avatar" alt="Alex Petrache" title="Alex Petrache" src="{{page.image}}"/>
+            <img id="avatar" alt="alexand.ro" title="alexand.ro" src="{{page.image}}"/>
         </div>
         <div class="row h-100 justify-content-center align-items-center">
-            <span id="name">Alex Petrache</span>
+            <span id="name">alexand.ro</span>
         </div>
         <div class="row h-100 justify-content-center align-items-center">
             <span id="description">
@@ -54,7 +55,12 @@ image: /assets/images/alexandro_alex_petrache.jpg
 
 {% for post in site.posts %}
   <a href="{{ post.url }}">
-    <div class="FeaturedImgBanner {% if post.inverse-img %}FeaturedImgBanner--inverse{% endif %}" {% if post.image %} style="background-image: url('{{ post.image }}');" {% endif %}>
+    <div
+      class="FeaturedImgBanner {% if post.inverse-img %}FeaturedImgBanner--inverse{% endif %}"
+      style="
+        {% if post.image %} background-image: url('{{ post.image }}'); {% endif %}
+        {% if post.ypos %} background-position-y: {{ post.ypos }}%; {% endif %}
+      ">
       <div class="TitleBanner">
         <div id="bannerContent">
           <h1>{{ post.title }}</h1>
