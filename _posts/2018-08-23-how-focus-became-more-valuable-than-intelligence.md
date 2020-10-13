@@ -90,6 +90,6 @@ You can be the most intelligent person on earth, if you don't have the focus whi
 </div>
 <div class="row h-100 justify-content-center align-items-center">
     <div class="item">
-        <a href="https://twitter.com/alexipetrache?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-screen-name="false" data-show-count="true">Follow @alexipetrache</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <a href="https://twitter.com/alexand_r0?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-screen-name="false" data-show-count="true">Follow @alexand_r0</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     </div>
 </div>

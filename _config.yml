@@ -6,7 +6,7 @@ author:
 description: Pursuing the world of startups. Creating videos @Jurnalul Unui Olimpic. Ex-Software Engineer @Amazon.
 url: "https://alexand.ro"
 twitter:
-  username: "AlexIPetrache"
+  username: "alexand_r0"
 facebook:
   app_id: 239202243681974
 plugins:
@@ -26,7 +26,7 @@ defaults:
 social:
   name: Alex Petrache
   links:
-    - https://twitter.com/AlexIPetrache
+    - https://twitter.com/alexand_r0
     - https://www.facebook.com/petrache.alex
     - https://www.linkedin.com/in/alexpetrache
     - https://github.com/AlexPetrache
