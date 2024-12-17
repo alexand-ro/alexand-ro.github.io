@@ -9,14 +9,13 @@ twitter:
   username: 'alexand__ro'
   creator: 'alexand__ro'
   site: 'alexand__ro'
-  card: 'summary'
+  card: 'summary_large_image'
 facebook:
   app_id: 239202243681974
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-feed
-  - jekyll-prettier
 defaults:
   - scope:
       path: ''
