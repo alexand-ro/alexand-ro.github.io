@@ -1,12 +1,12 @@
 permalink: /:year/:month/:title
-title: Alex Petrache
-author: 
-  name: Alex Petrache
+title: alexand.ro
+author:
+  name: alexand.ro
   email: hello@alexand.ro
 description: Pursuing the world of startups. Creating videos @Jurnalul Unui Olimpic. Ex-Software Engineer @Amazon.
-url: "https://alexand.ro"
+url: 'https://alexand.ro'
 twitter:
-  username: "alexand_r0"
+  username: 'alexand__ro'
 facebook:
   app_id: 239202243681974
 plugins:
@@ -15,19 +15,16 @@ plugins:
   - jekyll-feed
 defaults:
   - scope:
-      path: ""
-      type: "posts"
+      path: ''
+      type: 'posts'
     values:
-      layout: "post"
+      layout: 'post'
   - scope:
-      path: ""
+      path: ''
     values:
-      layout: "default"
+      layout: 'default'
 social:
-  name: Alex Petrache
+  name: alexand.ro
   links:
-    - https://twitter.com/alexand_r0
-    - https://www.facebook.com/petrache.alex
-    - https://www.linkedin.com/in/alexpetrache
-    - https://github.com/AlexPetrache
+    - https://twitter.com/alexand__ro
     - https://youtube.com/channel/UCQQwkvM9vQ6AEl1CfnEtdrQ

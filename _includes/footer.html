@@ -1,20 +1,30 @@
 <div id="footer">
-    <div class="social-btns">
-        <a class="btn email" href="mailto:hello@alexand.ro"><i class="fa fa-envelope"></i></a>
-        <a class="btn twitter" href="https://twitter.com/alexand_r0"><i class="fa fa-twitter"></i></a>
-        <a class="btn youtube" href="https://youtube.com/channel/UCQQwkvM9vQ6AEl1CfnEtdrQ"><i class="fa fa-youtube"></i></a>
-        <a class="btn linkedin" href="https://www.linkedin.com/in/alexpetrache/"><i class="fa fa-linkedin"></i></a>
-        <a class="btn rss" href="http://feeds.feedburner.com/AlexPetrache"><i class="fa fa-rss"></i></a>
-    </div>
-    <a class="copyright" href="/">© 2020 alexand.ro</a>
+  <div class="social-btns">
+    <a class="btn email" href="mailto:hello@alexand.ro">
+      <i class="fa fa-envelope"></i>
+    </a>
+    <a class="btn twitter" href="https://twitter.com/alexand__ro">
+      <i class="fa fa-twitter"></i>
+    </a>
+    <a
+      class="btn youtube"
+      href="https://youtube.com/channel/UCQQwkvM9vQ6AEl1CfnEtdrQ"
+    >
+      <i class="fa fa-youtube"></i>
+    </a>
+    <a class="btn rss" href="https://alexand.ro/feed.xml">
+      <i class="fa fa-rss"></i>
+    </a>
+  </div>
+  <a class="copyright" href="/">© <span id="current-year"></span> alexand.ro</a>
 </div>
 
 <script
-    src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-    crossorigin="anonymous"></script>
-<script type='text/javascript' src='/assets/js/myscripts.js'></script>
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"
+></script>
+<script type="text/javascript" src="/assets/js/myscripts.js"></script>
 
-{% if jekyll.environment == 'production' %}
-    {% include analytics_statcounter.html %}
-{% endif %}
+{% if jekyll.environment == 'production' %} {% include
+analytics_statcounter.html %} {% endif %}

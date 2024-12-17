@@ -2,6 +2,7 @@
 image: /assets/images/2018-08-23-how-focus-became-more-valuable-than-intelligence.jpg
 ypos: 80
 ---
+
 This may be the most important problem of our lifetime.
 
 An individual is considered valuable to the society, to other people and to itself by the ability he has to apply what he knows in order to craft solutions to different problems or visions. The difficulty of the problem may vary: from rock climbing where your undivided focus and concentration decides every second if you will remain alive or not, to problem solving that may decide the future of your company or life.
@@ -65,6 +66,7 @@ You can be the most intelligent person on earth, if you don't have the focus whi
 <hr>
 
 <i><b>Edit 30 December 2019:</b> This article reached <a href="https://news.ycombinator.com/item?id=21906727">first page of hacker news</a> since last night, if you want to receive a summary of what happened next, then please subscribe or follow me on Twitter:</i>
+
 <div class="row h-100 justify-content-center align-items-center">
     <div>
     <!-- Begin Mailchimp Signup Form -->
@@ -87,9 +89,10 @@ You can be the most intelligent person on earth, if you don't have the focus whi
 
     <!--End mc_embed_signup-->
     </div>
+
 </div>
 <div class="row h-100 justify-content-center align-items-center">
     <div class="item">
-        <a href="https://twitter.com/alexand_r0?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-screen-name="false" data-show-count="true">Follow @alexand_r0</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <a href="https://twitter.com/alexand__ro?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @alexand__ro</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     </div>
 </div>
