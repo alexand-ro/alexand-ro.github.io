@@ -7,12 +7,16 @@ description: Pursuing the world of startups. Creating videos @Jurnalul Unui Olim
 url: 'https://alexand.ro'
 twitter:
   username: 'alexand__ro'
+  creator: 'alexand__ro'
+  site: 'alexand__ro'
+  card: 'summary'
 facebook:
   app_id: 239202243681974
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-feed
+  - jekyll-prettier
 defaults:
   - scope:
       path: ''
