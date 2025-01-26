@@ -1,6 +1,7 @@
 ---
 image: /assets/images/2018-08-23-how-focus-became-more-valuable-than-intelligence.jpg
 ypos: 80
+coverpos: bottom
 ---
 
 This may be the most important problem of our lifetime.

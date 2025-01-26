@@ -9,7 +9,7 @@ regenerate: true
   page.image
   %}
   class="post-cover {% if page.mobile-cover %} post-cover-mobile {% endif %}"
-  style="background-image: url({{ page.image }});"
+  style="background-image: url({{ page.image }}); {% if page.coverpos %} background-position: {{ page.coverpos }}; {% endif %}"
   {%
   endif
   %}
