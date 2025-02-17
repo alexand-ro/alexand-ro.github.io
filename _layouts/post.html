@@ -42,9 +42,10 @@ regenerate: true
   {% endif %}
 </article>
 
-{% if page.image %} {% assign photo_title_size = page.image.size | minus: 30 %}
-{% assign photo_title = page.image | slice: 26, photo_title_size | replace: '-',
-' ' | append: ' article cover with alexand.ro' %}
+{% include newsletter-cta.html %} {% if page.image %} {% assign photo_title_size
+= page.image.size | minus: 30 %} {% assign photo_title = page.image | slice: 26,
+photo_title_size | replace: '-', ' ' | append: ' article cover with alexand.ro'
+%}
 <img
   style="display: none"
   src="{{ page.image }}"

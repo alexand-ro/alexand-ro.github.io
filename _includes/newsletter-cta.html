@@ -1,0 +1,50 @@
+<article class="newsletter-cta container">
+  <div class="newsletter-content">
+    <p>I share my learnings about startups and productivity</p>
+  </div>
+  {% include subscribe.html %}
+</article>
+
+<style>
+  .newsletter-cta {
+    margin: 4rem auto;
+    padding: 2.5rem;
+    background: linear-gradient(to right, #e9ecef, #ffffff);
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .newsletter-content {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .newsletter-content h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333333;
+  }
+
+  .newsletter-content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #555555;
+    margin: 0 auto;
+    max-width: 650px;
+  }
+
+  @media (max-width: 768px) {
+    .newsletter-cta {
+      padding: 2rem 1.5rem;
+      margin: 3rem auto;
+    }
+
+    .newsletter-content h2 {
+      font-size: 1.6rem;
+    }
+
+    .newsletter-content p {
+      font-size: 1.1rem;
+    }
+  }
+</style>

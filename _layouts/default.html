@@ -29,8 +29,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    {% if jekyll.environment == 'production' %} {% include analytics.html %} {%
-    endif %} {% seo title=false %} {% feed_meta %}
+    {% include sparkloop.html %} {% if jekyll.environment == 'production' %} {%
+    include analytics.html %} {% endif %} {% seo title=false %} {% feed_meta %}
   </head>
   <body>
     {{ content }} {% include footer.html %}
