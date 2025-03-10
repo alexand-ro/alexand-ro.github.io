@@ -13,7 +13,7 @@ Here's what makes this so frustrating...
 
 You already know what your goals are. Unlike others who are still searching for direction.
 
-You have the time to do them. Others don't have time, they have 2 jobs, commitments, small kids, or maybe they're even in vacation, but you have the time.
+You have the time to do them. Others don't have time, they have 2 jobs, commitments, small kids, or maybe they're even on vacation, but you have the time.
 
 You even have all the tools and resources to do them. But you still don't.
 
@@ -41,7 +41,7 @@ This makes you wait for the problem to solve itself or for someone else to solve
 
 Instead of using your energy to wish it, use the energy to do it.
 
-> By wishing or manifesting your goal, by definition **someone has to do the work to make it reality**, so if you're not the one doing the work, someone else has to do it. There is no other way in this universe.
+> By wishing or manifesting your goal, by definition, **someone has to do the work to make it a reality**, so if you're not the one doing the work, someone else has to do it. There is no other way in this universe.
 >
 > — alexand.ro
 
@@ -49,7 +49,7 @@ So unless you're a beggar and waiting for the mercy of a hardworking person, do 
 
 Unless you're a thief or a looter who steals or forces someone else to do his work for him, do it.
 
-Unless you have the money to hire someone to willingly do it for you, which is the the only way everybody wins and it frees you to do other things that need to get done, unless you have the budget to do it, do the task yourself.
+Unless you have the money to hire someone to willingly do it for you, which is the only way everybody wins and it frees you to do other things that need to get done, unless you have the budget to do it, do the task yourself.
 
 **Don't wait for the universe to force someone else to do your work.**
 
@@ -57,7 +57,7 @@ Unless you have the money to hire someone to willingly do it for you, which is t
 
 You're afraid that this is not the right goal and you postpone the bad news.
 
-But you need to find this as soon as possible, and the only way to find out is to do it. Not by asking 100 people if this the right goal, watching 100 videos, researching 100 statistics. Basic logic is enough to know that this is not a foolish idea, now do it to be sure is not.
+But you need to find this as soon as possible, and the only way to find out is to do it. Not by asking 100 people if this is the right goal, watching 100 videos, researching 100 statistics. Basic logic is enough to know that this is not a foolish idea, now do it to be sure is not.
 
 In case it's stupid you will find out for sure before everyone else, while they still fantasise and visualise and meditate about it while taking no action.
 
@@ -75,7 +75,7 @@ Even if you planned your goals, you may not be sure of their success.
 
 This is actually a good point, while pursuing this goal you cannot pursue others, so you're not only losing time if it's not the right goal, but you also postpone working on the right one.
 
-But consider this simple math: if you don't try, your change of success is exactly 0%. If you try, it's greater than 0%.
+But consider this simple math: if you don't try, your chance of success is exactly 0%. If you try, it's greater than 0%.
 
 And here's a mindset shift that helps:
 
@@ -85,7 +85,7 @@ If it fails, you have less guilt because experiments are designed to test hypoth
 
 ### Perfect Timing Fallacy: You're waiting for the perfect time.
 
-You think that it would be easier if some other events happens first.
+You think that it would be easier if some other events happen first.
 
 If you know for sure this is the case and there is no problem delaying it, then good, wait by doing something else in the meanwhile. But if it's not sure and it's not in your control then it's just an excuse.
 
@@ -105,13 +105,13 @@ By doing these small steps, it means you already started working on your goal.
 
 Assume the feeling will come and continue anyway. If it comes, it's a bonus, otherwise you made great progress so far which is better than waiting and not doing anything.
 
-Most of the times it's harder to stop than to continue, because like a train already in motion, you already gained some momentum and it's harder to make it stop.
+Most of the time it's harder to stop than to continue, because like a train already in motion, you already gained some momentum and it's harder to make it stop.
 
 Remember:
 
 > There's **no prize** for "feeling it" while achieving your goals. The only thing that matters is whether you complete them or not.
 
-Your child's stomach doesn't get fed because you felt or didn't felt like cooking. Is there something on the plate or not?
+Your child's stomach doesn't get fed because you felt or didn't feel like cooking. Is there something on the plate or not?
 
 Yes, you work faster when feeling it, but if the price is dreadful procrastination, then it's not worth it at all.
 
@@ -155,7 +155,7 @@ You don't know when a goal is done, so how can you start a journey without knowi
 
 Define when that specific task is done and do everything to complete it. Otherwise you treat it like a painting which is never finished since you can always do something on it.
 
-Be very specific. _"Learn spanish"_ is not that helpful because you don't have a specific target, you'll never feel finished.
+Be very specific. _"Learn Spanish"_ is not that helpful because you don't have a specific target, you'll never feel finished.
 
 _"Learn 10 medical terms in Spanish today"_ is. You can continue learning more as a bonus after you finished the task, but otherwise you will never feel finished.
 
@@ -197,7 +197,7 @@ That's why I implemented all kinds of subtle progress tracking in my application
 
 It takes time and effort to track and calculate progress and it can stop you from actually working on the goal, it can become a reason to procrastinate. And **the last thing you need is another reason to procrastinate, even if it's useful.**
 
-That's why i did this so it can automatically and instantly calculate progress without requiring extra work from you.
+That's why I did this so it can automatically and instantly calculate progress without requiring extra work from you.
 
 ### Bonus Trick 1
 
