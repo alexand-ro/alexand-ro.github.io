@@ -24,7 +24,7 @@ from headings {% endcomment %}
 
 <style>
   :root {
-    --toc-width: 240px;
+    --toc-width: 280px;
   }
 
   .toc-wrapper {
@@ -32,19 +32,20 @@ from headings {% endcomment %}
     position: fixed;
     left: calc(50% - 650px);
     top: 100px;
-    max-height: calc(100vh - 120px);
-    overflow-y: auto;
     padding: 1rem;
     font-size: 0.9rem;
     background: transparent;
     z-index: 100;
+    max-height: calc(100vh - 120px);
+    display: flex;
+    flex-direction: column;
   }
 
   .toc-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 1rem;
+    margin-bottom: 0.75rem;
     font-weight: 600;
     color: #666;
   }
@@ -62,8 +63,23 @@ from headings {% endcomment %}
   }
 
   .toc-content {
-    max-height: calc(100vh - 200px);
+    flex: 1;
     overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(0, 0, 0, 0.2) transparent;
+  }
+
+  .toc-content::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .toc-content::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .toc-content::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
   }
 
   .toc-content ul {
@@ -73,11 +89,12 @@ from headings {% endcomment %}
   }
 
   .toc-item {
-    margin: 0.5rem 0;
+    margin: 0.25rem 0;
   }
 
   .toc-level-3 {
     padding-left: 1rem;
+    font-size: 0.85em;
   }
 
   .toc-link {
@@ -85,8 +102,8 @@ from headings {% endcomment %}
     text-decoration: none;
     transition: color 0.2s ease;
     display: block;
-    padding: 0.25rem 0;
-    line-height: 1.4;
+    padding: 0.15rem 0;
+    line-height: 1.3;
   }
 
   .toc-link:hover {
@@ -147,13 +164,34 @@ from headings {% endcomment %}
     const tocToggle = toc.querySelector('.toc-toggle');
     let isExpanded = false;
     let headerHeight = 0;
+    let footerElement;
 
-    // Get header height
+    // Get header height and footer element
     const header = document.querySelector('header');
+    footerElement = document.querySelector('footer');
+
     if (header) {
       headerHeight = header.offsetHeight;
       // Set initial TOC position
       toc.style.top = headerHeight + 20 + 'px';
+    }
+
+    // Function to check and adjust TOC position relative to footer
+    function adjustTocPosition() {
+      if (!footerElement) return;
+
+      const footerRect = footerElement.getBoundingClientRect();
+      const tocRect = toc.getBoundingClientRect();
+      const windowHeight = window.innerHeight;
+
+      if (footerRect.top <= windowHeight) {
+        // Footer is in view, adjust TOC bottom position
+        const bottomSpacing = windowHeight - footerRect.top + 20;
+        toc.style.maxHeight = `calc(100vh - ${bottomSpacing}px - 120px)`;
+      } else {
+        // Footer is not in view, reset TOC height
+        toc.style.maxHeight = 'calc(100vh - 120px)';
+      }
     }
 
     // Update TOC position on scroll
@@ -165,7 +203,12 @@ from headings {% endcomment %}
       } else {
         toc.style.top = headerHeight - scrollTop + 20 + 'px';
       }
+
+      adjustTocPosition();
     });
+
+    // Update on window resize too
+    window.addEventListener('resize', adjustTocPosition);
 
     // Generate the TOC from headings
     function generateTOC() {
