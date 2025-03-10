@@ -3,6 +3,24 @@ layout: default
 regenerate: true
 ---
 
+<style>
+  .post-wrapper {
+    position: relative;
+  }
+
+  .post-content-wrapper {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  /* Only apply margin when TOC is visible */
+  .toc-wrapper:not(.visible) + .post-content-wrapper {
+    max-width: 100%;
+    margin-left: 0;
+  }
+</style>
+
 <div class="post-wrapper">
   <header
     class="{% if page.image %}post-cover{% if page.mobile-cover %} post-cover-mobile{% endif %}{% endif %}"
@@ -11,6 +29,7 @@ regenerate: true
   </header>
 
   <div class="post-content-wrapper">
+    {% include toc.html %}
     <article role="article" class="article-content">
       <h1 class="title">{{ page.title }}</h1>
       <div class="date">{{ page.date | date: "%B %d • %Y" }}</div>

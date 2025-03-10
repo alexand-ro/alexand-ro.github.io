@@ -10,7 +10,7 @@ An individual is considered valuable to the society, to other people and to itse
 
 In our days we need to solve problems harder than ever before and we have a lot of intelligent people to do that. Or do we? You see, even if you are intelligent, there is a prerequisite every single time you wake up which will decide if your intelligence will be used or wasted that day. That prerequisite is focus.
 
-### A wasted day may lead to a wasted life
+## A wasted day may lead to a wasted life
 
 Every single day you have the opportunity to do what *you* want. It may be anything from relaxing to building a rocket that will send us to Mars, is your decision, but the question is: will you be able to do what you want during that day? In the year 2018 where the economy and technology are their high, I wish you good luck.
 
@@ -18,13 +18,13 @@ Once you wake up, everything starts competing for your attention: every single c
 
 With all of these distractions to handle, your head is already full of something completely different that you wanted to.
 
-### Doing only one thing became boring
+## Doing only one thing became boring
 
 The advertisements are getting better and better on psychologically competing for our attention by creating emotions inside us. Our brain got used with the unlimited hits of instant gratifications from the notifications and with doing multiple things in the same time, because "it's easy to be in a meeting and also reply to messages, it's taking only a few seconds". This false perception made our brain hyperactive and reluctant to do "only 1 thing at a time" like reading, solving problems, pay attention when we hang out with people, taking a shower without listening to music, etc.
 
 If you're trying to dive deep in a certain domain like coding, playing an instrument, or any other activity that requires your undivided attention, you'll be full of sweat after 5 minutes of not checking the phone. You will never reach the level of knowledge and skills required to be a valuable person in that domain.
 
-### Focus effects in long term
+## Focus effects in long term
 
 It may not ring any emergency bell in the present moment, and especially that you're doing "so many things" at once, you will start to think that you're doing an amazing job.
 
@@ -34,7 +34,7 @@ To build solutions that will have a big impact now and in the future requires an
 
 Every single day you don't work on your goals, you're pushing away the day when your vision becomes reality. If a random distraction is more fun than working on your goals, then your goals are not great enough. You should have goals that make you shiver with excitement just by thinking about them.
 
-### Managing focus when you have multiple passions
+## Managing focus when you have multiple passions
 
 This can be a tragedy disguised as a blessing. You have an incredible passion for life and all of the modalities that you can improve it for you and others, but there's limited time and infinite possibilities. We can't do things in parallel.
 
@@ -42,7 +42,7 @@ This is when you start working on one of your passions, but after 1-2 minutes yo
 
 This requires commitment and the willingness to lose the other things that you are not doing at the moment. If you are not willing to do that, it means that the current passion is not the right one to work on.
 
-### Lack of purpose
+## Lack of purpose
 
 Purpose is the most important word in the dictionary for me. This is the key in life for happiness, passion, fulfilment, joy and all of the positive states that you can have. When you have a purpose and you're working on it, it doesn't matter what happens in the outside world or how bad your current situation is. The first step you take towards your purpose, you will feel all of that anxiety and worry disappear from your shoulders.
 
@@ -50,7 +50,7 @@ When you have a clear purpose you have order in your life. You know what you wan
 
 Your purpose and how strong it is, will determine your ability to focus, even after your brain got damaged by the times we live today.
 
-### Be willing to lose people
+## Be willing to lose people
 
 I care about my friends with all of my heart. I may look emotionless to many people, especially to new ones, but when it comes about their lives and struggles I'm all in. Sometimes I think that I was blessed to have these amazing people in my life and its one of the rare times that my emotions come close to my logical thinking. I meet new people every day and I can recognise instantly if we'll have a special long-term relationship or not. And most of the times we have, but there's a catch: you have to be willing to let them go. I know is hard, I know you had an amazing connection after just the first 1-2 days or weeks, just imagine the potential of that relationship long term.
 
@@ -68,30 +68,6 @@ You can be the most intelligent person on earth, if you don't have the focus whi
 
 <i><b>Edit 30 December 2019:</b> This article reached <a href="https://news.ycombinator.com/item?id=21906727">first page of hacker news</a> since last night, if you want to receive a summary of what happened next, then please subscribe or follow me on Twitter:</i>
 
-<div class="row h-100 justify-content-center align-items-center">
-    <div>
-    <!-- Begin Mailchimp Signup Form -->
-        <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
-        <style type="text/css">
-        #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
-        /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
-            We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-        </style>
-        <div id="mc_embed_signup">
-        <form action="https://alexand.us4.list-manage.com/subscribe/post?u=7d57c5cb9a6eb44e87dee3649&amp;id=d9a14e3f32" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-            <div id="mc_embed_signup_scroll">
-            <input style="width: auto; font-size:14px;" type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Your email address" required>
-            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_7d57c5cb9a6eb44e87dee3649_d9a14e3f32" tabindex="-1" value=""></div>
-            <div class="clear"><input type="submit" value="Get updates" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-            </div>
-        </form>
-        </div>
-
-    <!--End mc_embed_signup-->
-    </div>
-
-</div>
 <div class="row h-100 justify-content-center align-items-center">
     <div class="item">
         <a href="https://twitter.com/alexand__ro?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @alexand__ro</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
