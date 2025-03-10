@@ -4,15 +4,7 @@ regenerate: true
 ---
 
 <header
-  {%
-  if
-  page.image
-  %}
-  class="post-cover {% if page.mobile-cover %} post-cover-mobile {% endif %}"
-  style="background-image: url({{ page.image }}); {% if page.coverpos %} background-position: {{ page.coverpos }}; {% endif %}"
-  {%
-  endif
-  %}
+  class="{% if page.image %}post-cover{% if page.mobile-cover %} post-cover-mobile{% endif %}{% endif %}"
 >
   <div class="icon-scroll"></div>
 </header>
@@ -52,4 +44,15 @@ photo_title_size | replace: '-', ' ' | append: ' article cover with alexand.ro'
   title="{{photo_title}}"
   alt="{{photo_title}}"
 />
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var header = document.querySelector('.post-cover');
+    if (header) {
+      header.style.backgroundImage = "url('{{ page.image }}')";
+      {% if page.coverpos %}
+      header.style.backgroundPosition = "{{ page.coverpos }}";
+      {% endif %}
+    }
+  });
+</script>
 {% endif %}
