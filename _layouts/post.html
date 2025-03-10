@@ -3,6 +3,33 @@ layout: default
 regenerate: true
 ---
 
+<style>
+  .post-wrapper {
+    position: relative;
+  }
+
+  .post-content-wrapper {
+    position: relative;
+    max-width: calc(100% - var(--toc-width));
+    margin-left: var(--toc-width);
+    padding: 0 2rem 2rem;
+  }
+
+  /* Only apply margin when TOC is visible */
+  .toc-wrapper:not(.visible) + .post-content-wrapper {
+    max-width: 100%;
+    margin-left: 0;
+  }
+
+  @media (max-width: 1024px) {
+    .post-content-wrapper {
+      max-width: 100%;
+      margin-left: 0;
+      padding-bottom: 5rem;
+    }
+  }
+</style>
+
 <div class="post-wrapper">
   <header
     class="{% if page.image %}post-cover{% if page.mobile-cover %} post-cover-mobile{% endif %}{% endif %}"
@@ -11,6 +38,7 @@ regenerate: true
   </header>
 
   <div class="post-content-wrapper">
+    {% include toc.html %}
     <article role="article" class="article-content">
       <h1 class="title">{{ page.title }}</h1>
       <div class="date">{{ page.date | date: "%B %d • %Y" }}</div>
