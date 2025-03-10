@@ -137,8 +137,23 @@ from headings {% endcomment %}
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
       border-radius: 12px;
       transform: translateY(0);
-      transition: transform 0.3s ease;
+      transition: transform 0.3s ease, opacity 0.3s ease;
       padding: 0;
+      z-index: 1000;
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    /* Show the TOC when scrolled past title */
+    body.scrolled-past-title .toc-wrapper {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    /* Hide the TOC when footer is visible */
+    body.footer-visible .toc-wrapper {
+      opacity: 0;
+      pointer-events: none;
     }
 
     .toc-header {
@@ -151,6 +166,8 @@ from headings {% endcomment %}
       display: flex;
       justify-content: space-between;
       align-items: center;
+      background: #fff;
+      border-radius: 12px;
     }
 
     .toc-toggle {
@@ -166,12 +183,15 @@ from headings {% endcomment %}
       padding: 0 1.25rem 1rem;
       max-height: calc(100vh - 20rem);
       overflow-y: auto;
+      background: #fff;
+      border-radius: 0 0 12px 12px;
     }
 
     .toc-wrapper.expanded {
       transform: translateY(0);
       height: auto;
       max-height: 80vh;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
 
     .toc-wrapper.expanded .toc-toggle svg {
@@ -199,9 +219,65 @@ from headings {% endcomment %}
     const tocHeader = toc.querySelector('.toc-header');
     let isExpanded = false;
 
+    // Check if scrolled past title
+    function checkTitleVisibility() {
+      if (window.innerWidth > 1300) return;
+
+      const title = document.querySelector('.article-content .title');
+      if (!title) return;
+
+      const titleRect = title.getBoundingClientRect();
+      // Only show TOC when title is above the viewport
+      if (titleRect.bottom < 0) {
+        document.body.classList.add('scrolled-past-title');
+      } else {
+        document.body.classList.remove('scrolled-past-title');
+      }
+    }
+
+    // Function to check if footer is visible
+    function checkFooterVisibility() {
+      if (window.innerWidth > 1300) return;
+
+      const footer = document.querySelector('footer');
+      const newsletter = document.querySelector('.newsletter-cta');
+      const pageNav = document.querySelector('.page-navigation');
+      const socialShare = document.querySelector('.social-article');
+
+      // Use any of these elements that might be at the bottom
+      const elements = [footer, newsletter, pageNav, socialShare].filter(
+        (el) => el
+      );
+
+      if (elements.length === 0) return;
+
+      let isFooterVisible = false;
+      const windowHeight = window.innerHeight;
+
+      // Check if any bottom element is more than 33% visible
+      elements.forEach((element) => {
+        const rect = element.getBoundingClientRect();
+        const visiblePercentage = (windowHeight - rect.top) / rect.height;
+        if (rect.top < windowHeight && visiblePercentage > 0.33) {
+          isFooterVisible = true;
+        }
+      });
+
+      // Add or remove the footer-visible class
+      if (isFooterVisible) {
+        document.body.classList.add('footer-visible');
+      } else {
+        document.body.classList.remove('footer-visible');
+      }
+    }
+
     // Desktop scroll handling
     function updateDesktopPosition() {
-      if (window.innerWidth <= 1300) return;
+      if (window.innerWidth <= 1300) {
+        checkTitleVisibility();
+        checkFooterVisibility();
+        return;
+      }
 
       const article = document.querySelector('.article-content');
       if (!article) return;
@@ -219,8 +295,17 @@ from headings {% endcomment %}
     // Initial position setup
     setTimeout(updateDesktopPosition, 100);
 
-    // Update on scroll
-    window.addEventListener('scroll', updateDesktopPosition);
+    // Update on scroll with throttling
+    let ticking = false;
+    window.addEventListener('scroll', () => {
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          updateDesktopPosition();
+          ticking = false;
+        });
+        ticking = true;
+      }
+    });
 
     // Update on resize
     window.addEventListener('resize', updateDesktopPosition);
