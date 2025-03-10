@@ -29,9 +29,9 @@ from headings {% endcomment %}
 
   .toc-wrapper {
     width: var(--toc-width);
-    position: fixed;
+    position: absolute;
     left: calc(50% - 650px);
-    top: 100px;
+    top: 0;
     padding: 1rem;
     font-size: 0.9rem;
     background: transparent;
@@ -39,6 +39,12 @@ from headings {% endcomment %}
     max-height: calc(100vh - 120px);
     display: flex;
     flex-direction: column;
+    transition: none;
+  }
+
+  .toc-wrapper.sticky {
+    position: fixed;
+    top: 20px;
   }
 
   .toc-header {
@@ -60,6 +66,8 @@ from headings {% endcomment %}
 
   .toc-toggle svg {
     transition: transform 0.3s ease;
+    width: 20px;
+    height: 20px;
   }
 
   .toc-content {
@@ -125,34 +133,58 @@ from headings {% endcomment %}
     .toc-wrapper {
       position: fixed;
       top: auto;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      width: 100%;
-      max-height: 80vh;
+      bottom: 1.5rem;
+      left: 1.5rem;
+      right: 1.5rem;
+      width: auto;
+      height: auto;
+      max-height: min-content;
       background: #fff;
-      box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
-      border: none;
-      border-radius: 0;
-      transform: translateY(calc(100% - 3.5rem));
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      border-radius: 12px;
+      transform: translateY(0);
       transition: transform 0.3s ease;
+      padding: 0;
+    }
+
+    .toc-header {
+      padding: 0.75rem 1.25rem;
+      margin: 0;
+      font-size: 0.95rem;
+      border-bottom: none;
+      cursor: pointer;
+      user-select: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
 
     .toc-toggle {
-      display: block;
+      display: flex;
+      align-items: center;
+      padding: 0;
+      margin: 0;
+      pointer-events: none;
+    }
+
+    .toc-content {
+      display: none;
+      padding: 0 1.25rem 1rem;
+      max-height: 60vh;
+      overflow-y: auto;
     }
 
     .toc-wrapper.expanded {
       transform: translateY(0);
+      height: auto;
     }
 
     .toc-wrapper.expanded .toc-toggle svg {
       transform: rotate(180deg);
     }
 
-    .toc-content {
-      max-height: calc(80vh - 3.5rem);
-      overflow-y: auto;
+    .toc-wrapper.expanded .toc-content {
+      display: block;
     }
   }
 </style>
@@ -161,54 +193,34 @@ from headings {% endcomment %}
   document.addEventListener('DOMContentLoaded', function () {
     const toc = document.getElementById('toc');
     const tocContent = toc.querySelector('.toc-content ul');
-    const tocToggle = toc.querySelector('.toc-toggle');
+    const tocHeader = toc.querySelector('.toc-header');
     let isExpanded = false;
-    let headerHeight = 0;
-    let footerElement;
 
-    // Get header height and footer element
-    const header = document.querySelector('header');
-    footerElement = document.querySelector('footer');
+    // Desktop scroll handling
+    function updateDesktopPosition() {
+      if (window.innerWidth <= 1024) return;
 
-    if (header) {
-      headerHeight = header.offsetHeight;
-      // Set initial TOC position
-      toc.style.top = headerHeight + 20 + 'px';
-    }
+      const article = document.querySelector('.article-content');
+      if (!article) return;
 
-    // Function to check and adjust TOC position relative to footer
-    function adjustTocPosition() {
-      if (!footerElement) return;
+      const articleRect = article.getBoundingClientRect();
+      const articleTop = articleRect.top;
 
-      const footerRect = footerElement.getBoundingClientRect();
-      const tocRect = toc.getBoundingClientRect();
-      const windowHeight = window.innerHeight;
-
-      if (footerRect.top <= windowHeight) {
-        // Footer is in view, adjust TOC bottom position
-        const bottomSpacing = windowHeight - footerRect.top + 20;
-        toc.style.maxHeight = `calc(100vh - ${bottomSpacing}px - 120px)`;
+      if (articleTop <= 20) {
+        toc.classList.add('sticky');
       } else {
-        // Footer is not in view, reset TOC height
-        toc.style.maxHeight = 'calc(100vh - 120px)';
+        toc.classList.remove('sticky');
       }
     }
 
-    // Update TOC position on scroll
-    window.addEventListener('scroll', function () {
-      const scrollTop =
-        window.pageYOffset || document.documentElement.scrollTop;
-      if (scrollTop > headerHeight) {
-        toc.style.top = '20px';
-      } else {
-        toc.style.top = headerHeight - scrollTop + 20 + 'px';
-      }
+    // Initial position setup
+    setTimeout(updateDesktopPosition, 100);
 
-      adjustTocPosition();
-    });
+    // Update on scroll
+    window.addEventListener('scroll', updateDesktopPosition);
 
-    // Update on window resize too
-    window.addEventListener('resize', adjustTocPosition);
+    // Update on resize
+    window.addEventListener('resize', updateDesktopPosition);
 
     // Generate the TOC from headings
     function generateTOC() {
@@ -267,9 +279,11 @@ from headings {% endcomment %}
     const tocLinks = toc.querySelectorAll('.toc-link');
 
     // Toggle TOC on mobile
-    tocToggle.addEventListener('click', () => {
-      isExpanded = !isExpanded;
-      toc.classList.toggle('expanded');
+    tocHeader.addEventListener('click', (e) => {
+      if (window.innerWidth <= 1024) {
+        isExpanded = !isExpanded;
+        toc.classList.toggle('expanded');
+      }
     });
 
     // Smooth scroll to section
@@ -286,7 +300,7 @@ from headings {% endcomment %}
             toc.classList.remove('expanded');
           }
 
-          const offset = 20; // Small offset from the top
+          const offset = 20;
           const targetPosition =
             targetElement.getBoundingClientRect().top +
             window.pageYOffset -
@@ -302,7 +316,7 @@ from headings {% endcomment %}
 
     // Highlight current section
     const observerOptions = {
-      rootMargin: '-20px 0px -80% 0px', // Adjust this to match the scroll offset
+      rootMargin: '-20px 0px -80% 0px',
       threshold: [0, 0.1, 0.25, 0.5, 0.75, 1],
     };
 
