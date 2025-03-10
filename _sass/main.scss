@@ -192,9 +192,20 @@ article .content p {
   margin-bottom: 1.5rem;
 }
 
-article .content h2,
+article .content h2 {
+  color: #2b231d;
+  font-size: 1.8em;
+  margin-top: 1em;
+  margin-bottom: 0.8em;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid #eaecef;
+}
+
 article .content h3 {
   color: #2b231d;
+  font-size: 1.4em;
+  margin-top: 1em;
+  margin-bottom: 0.6em;
 }
 
 article .content a {

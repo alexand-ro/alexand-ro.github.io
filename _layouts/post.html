@@ -74,7 +74,7 @@ regenerate: true
     if (header) {
       header.style.backgroundImage = "url('{{ page.image }}')";
       {% if page.coverpos %}
-      header.style.backgroundPosition = "{{ page.coverpos }}";
+        header.style.backgroundPosition = "{{ page.coverpos }}";
       {% endif %}
     }
   });
