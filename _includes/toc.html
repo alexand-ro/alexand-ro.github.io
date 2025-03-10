@@ -243,8 +243,14 @@ from headings {% endcomment %}
             toc.classList.remove('expanded');
           }
 
+          const offset = 20; // Small offset from the top
+          const targetPosition =
+            targetElement.getBoundingClientRect().top +
+            window.pageYOffset -
+            offset;
+
           window.scrollTo({
-            top: targetElement.offsetTop - 80,
+            top: targetPosition,
             behavior: 'smooth',
           });
         }
@@ -253,7 +259,7 @@ from headings {% endcomment %}
 
     // Highlight current section
     const observerOptions = {
-      rootMargin: '-80px 0px -80% 0px',
+      rootMargin: '-20px 0px -80% 0px', // Adjust this to match the scroll offset
       threshold: [0, 0.1, 0.25, 0.5, 0.75, 1],
     };
 
