@@ -1,5 +1,5 @@
 $('.icon-scroll').click(function () {
-  var cls = $('.container').offset().top;
+  var cls = $('.article-content').offset().top;
   $('html, body').animate({ scrollTop: cls }, 'slow');
 });
 
