@@ -133,7 +133,7 @@ Why? Because finishing means judgment time: did it work or not? If not, you inve
 
 Cut through this fear by remembering: if it didn't work, better to know NOW before investing more precious time.
 
-### The Hardness trap
+### The Hardness Trap
 
 Your goal might simply be physically or mentally challenging
 
@@ -179,7 +179,7 @@ You start thinking the task requires special preparation, perfect conditions, ri
 
 It doesn't. It's not special. Do it and forget it.
 
-### Overwhelmed by ideas
+### Overwhelmed by Ideas
 
 Sometimes you feel overwhelmed by so many ideas and goals competing for attention.
 
@@ -199,7 +199,7 @@ It takes time and effort to track and calculate progress and it can stop you fro
 
 That's why i did this so it can automatically and instantly calculate progress without requiring extra work from you.
 
-### Bonus Trick 1:
+### Bonus Trick 1
 
 You can procrastinate on your goal by working on another goal that you want to do, which is a smart way to procrastinate.
 
