@@ -123,20 +123,14 @@ from headings {% endcomment %}
     font-weight: 600;
   }
 
-  @media (max-width: 1280px) {
-    .toc-wrapper {
-      left: 20px;
-    }
-  }
-
-  @media (max-width: 1024px) {
+  @media (max-width: 1300px) {
     .toc-wrapper {
       position: fixed;
       top: auto;
-      bottom: 1.5rem;
-      left: 1.5rem;
+      left: auto;
       right: 1.5rem;
-      width: auto;
+      bottom: 1.5rem;
+      width: 300px;
       height: auto;
       max-height: min-content;
       background: #fff;
@@ -170,13 +164,14 @@ from headings {% endcomment %}
     .toc-content {
       display: none;
       padding: 0 1.25rem 1rem;
-      max-height: 60vh;
+      max-height: calc(100vh - 20rem);
       overflow-y: auto;
     }
 
     .toc-wrapper.expanded {
       transform: translateY(0);
       height: auto;
+      max-height: 80vh;
     }
 
     .toc-wrapper.expanded .toc-toggle svg {
@@ -185,6 +180,14 @@ from headings {% endcomment %}
 
     .toc-wrapper.expanded .toc-content {
       display: block;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .toc-wrapper {
+      left: 1.5rem;
+      right: 1.5rem;
+      width: auto;
     }
   }
 </style>
@@ -198,7 +201,7 @@ from headings {% endcomment %}
 
     // Desktop scroll handling
     function updateDesktopPosition() {
-      if (window.innerWidth <= 1024) return;
+      if (window.innerWidth <= 1300) return;
 
       const article = document.querySelector('.article-content');
       if (!article) return;
@@ -278,9 +281,9 @@ from headings {% endcomment %}
     // Get TOC links after generation
     const tocLinks = toc.querySelectorAll('.toc-link');
 
-    // Toggle TOC on mobile
+    // Toggle TOC on tablet/mobile
     tocHeader.addEventListener('click', (e) => {
-      if (window.innerWidth <= 1024) {
+      if (window.innerWidth <= 1300) {
         isExpanded = !isExpanded;
         toc.classList.toggle('expanded');
       }
@@ -295,7 +298,7 @@ from headings {% endcomment %}
 
         if (targetElement) {
           // Close TOC on mobile after clicking
-          if (window.innerWidth <= 1024) {
+          if (window.innerWidth <= 1300) {
             isExpanded = false;
             toc.classList.remove('expanded');
           }
