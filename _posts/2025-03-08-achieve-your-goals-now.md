@@ -41,7 +41,7 @@ This makes you wait for the problem to solve itself or for someone else to solve
 
 Instead of using your energy to wish it, use the energy to do it.
 
-> By wishing or manifesting you goal, by definition **someone has to do the work to make it reality**, so if you're not the one doing the work, someone else has to do it. There is no other way in this universe.
+> By wishing or manifesting your goal, by definition **someone has to do the work to make it reality**, so if you're not the one doing the work, someone else has to do it. There is no other way in this universe.
 >
 > — alexand.ro
 
