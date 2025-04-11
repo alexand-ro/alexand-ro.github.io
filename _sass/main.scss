@@ -278,6 +278,10 @@ blockquote::after {
   border-bottom: none;
 }
 
+.content blockquote p {
+  margin-bottom: 0;
+}
+
 @media only screen and (max-width: 600px) {
   blockquote {
     font-size: 30px;
