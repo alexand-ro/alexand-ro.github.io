@@ -4,4 +4,5 @@ $('.icon-scroll').click(function () {
 });
 
 // Update the year dynamically
-document.getElementById('current-year').textContent = new Date().getFullYear();
+var currentYear = document.getElementById('current-year');
+if (currentYear) currentYear.textContent = new Date().getFullYear();
