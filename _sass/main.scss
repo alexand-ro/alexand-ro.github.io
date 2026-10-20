@@ -457,6 +457,73 @@ blockquote::after {
   }
 }
 
+/* Homepage: one column below 1280px, intro (min 580px) + articles from 1280px up */
+@media all and (max-width: 1279.98px) {
+  /* Footer lives in .home-side in the markup; in one column, flatten it so the footer stays below the articles */
+  .home {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .home-side {
+    display: contents;
+  }
+
+  .home #footer {
+    order: 1;
+  }
+}
+
+@media all and (min-width: 1280px) {
+  .home {
+    display: grid;
+    grid-template-columns: minmax(580px, 1fr) 2fr;
+    align-items: start;
+  }
+
+  /* Intro + footer stay in view while scrolling through the articles */
+  .home-side {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 6px 3px #ccc;
+  }
+
+  .home #intro {
+    flex: 1;
+    margin-bottom: 0;
+    box-shadow: none;
+  }
+
+  /* Same 20px as the gap between articles (.FeaturedImgBanner margin-bottom), which also gives the last article's bottom gap */
+  .home-posts {
+    padding: 20px 20px 0 20px;
+  }
+
+  .home .FeaturedImgBanner {
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .home #intro #description {
+    width: 85%;
+  }
+
+  .home #footer {
+    box-shadow: none;
+    padding: 20px 10px;
+  }
+
+  .home #footer .social-btns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: auto;
+  }
+}
+
 .flex-container {
   -webkit-column-count: 3;
   -webkit-column-gap: 0;

@@ -2,6 +2,8 @@
 title: alexand.ro
 image: /assets/images/og-card.jpg
 regenerate: true
+# Footer is rendered inside the homepage layout instead of by _layouts/default.html
+home_footer: true
 ---
 
 <script src="https://apis.google.com/js/platform.js"></script>
@@ -20,6 +22,8 @@ regenerate: true
   );
 </script>
 
+<div class="home">
+<div class="home-side">
 <div id="intro" class="row justify-content-center align-items-center">
   <div class="col-md-12">
     <div class="row h-100 justify-content-center align-items-center">
@@ -48,7 +52,10 @@ regenerate: true
     </div>
   </div>
 </div>
+{% include footer.html %}
+</div>
 
+<div class="home-posts">
 {% for post in site.posts %}
 <a href="{{ post.url }}">
   <div
@@ -68,3 +75,5 @@ regenerate: true
   </div>
 </a>
 {% endfor %}
+</div>
+</div>

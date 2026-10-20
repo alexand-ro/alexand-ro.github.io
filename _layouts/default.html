@@ -33,6 +33,6 @@
     include analytics.html %} {% endif %} {% seo title=false %} {% feed_meta %}
   </head>
   <body>
-    {{ content }} {% include footer.html %}
+    {{ content }} {% unless page.home_footer %}{% include footer.html %}{% endunless %}
   </body>
 </html>
