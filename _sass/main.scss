@@ -694,6 +694,23 @@ blockquote::after {
     border-radius: 8px;
     overflow: hidden;
   }
+}
+
+/* Wide screens: articles side by side in rows (1 2 / 3 4 / ...), same 20px gap horizontally as vertically */
+@media all and (min-width: 1800px) {
+  .home-posts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+  }
+
+  /* Half-width cards: slightly smaller titles so long ones fit the 350px card */
+  .home-posts #bannerContent h1 {
+    font-size: 2.1rem;
+  }
+}
+
+@media all and (min-width: 1280px) {
 
   .home #intro #description {
     width: 85%;
