@@ -475,19 +475,24 @@ blockquote::after {
 }
 
 @media all and (min-width: 1280px) {
+  /* The whole page scrolls natively (wheel works anywhere); the left column is fixed so it doesn't move, even during macOS overscroll bounce */
   .home {
     display: grid;
-    grid-template-columns: minmax(580px, 1fr) 2fr;
+    grid-template-columns: max(580px, 33.333vw) 1fr;
     align-items: start;
   }
 
-  /* Intro + footer stay in view while scrolling through the articles */
+  /* Intro + footer: fixed over the (empty) first grid column, same width as it */
   .home-side {
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
+    z-index: 1;
+    width: max(580px, 33.333vw);
     height: 100vh;
     display: flex;
     flex-direction: column;
+    background-color: #fff;
     box-shadow: 0px 0px 6px 3px #ccc;
   }
 
@@ -499,6 +504,7 @@ blockquote::after {
 
   /* Same 20px as the gap between articles (.FeaturedImgBanner margin-bottom), which also gives the last article's bottom gap */
   .home-posts {
+    grid-column: 2;
     padding: 20px 20px 0 20px;
   }
 
