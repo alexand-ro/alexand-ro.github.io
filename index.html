@@ -8,6 +8,14 @@ home_footer: true
 
 <script src="https://apis.google.com/js/platform.js"></script>
 
+<!-- Handwriting fonts for the founder letter: Patrick Hand (readable body), Caveat (greeting/signature) -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Patrick+Hand&display=swap"
+/>
+
 <script id="mcjs">
   !(function (c, h, i, m, p) {
     (m = c.createElement(h)),
@@ -27,24 +35,47 @@ home_footer: true
 <div id="intro" class="row justify-content-center align-items-center">
   <div class="col-md-12">
     <div class="row h-100 justify-content-center align-items-center">
-      <img
-        id="avatar"
-        alt="alexand.ro"
-        title="alexand.ro"
-        src="/assets/images/alexandro.jpg"
-      />
-    </div>
-    <div class="row h-100 justify-content-center align-items-center">
-      <span id="name">alexand.ro</span>
-    </div>
-    <div class="row h-100 justify-content-center align-items-center">
-      <span id="description">
-        I make useful <a href="https://perspectask.com">tools</a> and
-        <a href="https://www.youtube.com/channel/UCQQwkvM9vQ6AEl1CfnEtdrQ"
-          >videos</a
-        >
-        that maximize life's potential.
-      </span>
+      <div id="letter">
+        <!-- Taped polaroid photo -->
+        <div class="letter-photo">
+          <img alt="Alexandro" src="/assets/images/alexandro.jpg" />
+          <span>me</span>
+        </div>
+
+        <p class="letter-hi">Hi, I'm Alexandro 👋</p>
+        <p>
+          I left my Software Engineer job at Amazon to build tools that
+          maximize life's potential.
+        </p>
+        <p>
+          <a href="https://perspectask.com"
+            ><img
+              class="letter-logo"
+              alt=""
+              src="/assets/images/logos/perspectask.svg"
+            />PerspecTask</a
+          >
+          is a task manager with end-to-end encryption. Your goals and tasks,
+          readable only by you.
+        </p>
+        <p>
+          <a href="https://publishq.com"
+            ><img
+              class="letter-logo"
+              alt=""
+              src="/assets/images/logos/publishq.svg"
+            />PublishQ</a
+          >
+          started because I spent over an hour a day posting the same shorts
+          on every platform. Now I schedule them everywhere in under 30
+          seconds.
+        </p>
+        <p>
+          Everything is bootstrapped: no investors, no vanity metrics.
+        </p>
+        <p class="letter-signoff">Thank you,</p>
+        <p class="letter-sign">Alexandro</p>
+      </div>
     </div>
 
     <div class="row h-100 justify-content-center align-items-center">

@@ -457,6 +457,168 @@ blockquote::after {
   }
 }
 
+/* Founder letter: lined, taped paper with a polaroid photo (same look as the PublishQ/ArticlesQ letters) */
+#intro #letter {
+  position: relative;
+  width: 85%;
+  max-width: 480px;
+  margin: 24px 0 18px;
+  padding: 30px 28px 16px 44px;
+  background-color: #fffdf7;
+  /* Ruled lines, one per 30px line of text, positioned just under each baseline */
+  background-image: repeating-linear-gradient(
+    transparent,
+    transparent 29px,
+    rgba(120, 113, 108, 0.18) 29px,
+    rgba(120, 113, 108, 0.18) 30px
+  );
+  background-position-y: 26px;
+  border-radius: 2px;
+  box-shadow: 0 6px 24px -8px rgba(0, 0, 0, 0.25);
+  transform: rotate(-1deg);
+  color: #292524;
+  font-family: 'Patrick Hand', cursive;
+  font-size: 19px;
+  line-height: 30px;
+  text-align: left;
+}
+
+/* Tape strip holding the paper */
+#intro #letter::before {
+  content: '';
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  width: 110px;
+  height: 26px;
+  transform: translateX(-50%) rotate(1deg);
+  background-color: rgba(214, 211, 209, 0.6);
+}
+
+/* Red margin line */
+#intro #letter::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 30px;
+  width: 1px;
+  background-color: rgba(253, 164, 175, 0.5);
+}
+
+#intro #letter p {
+  margin: 0 0 30px;
+}
+
+#intro #letter a {
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+#intro #letter .letter-hi,
+#intro #letter .letter-signoff,
+#intro #letter .letter-sign,
+#intro #letter .letter-photo span {
+  font-family: 'Caveat', cursive;
+}
+
+#intro #letter .letter-hi {
+  font-size: 27px;
+  font-weight: 700;
+}
+
+#intro #letter .letter-logo {
+  height: 20px;
+  width: 20px;
+  margin-right: 4px;
+  vertical-align: -4px;
+  border-radius: 5px;
+}
+
+#intro #letter .letter-photo {
+  position: relative;
+  z-index: 1;
+  float: right;
+  width: 110px;
+  margin: 0 0 8px 14px;
+  padding: 6px 6px 22px;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.18);
+  transform: rotate(3deg);
+}
+
+#intro #letter .letter-photo::before {
+  content: '';
+  position: absolute;
+  top: -9px;
+  left: 50%;
+  width: 56px;
+  height: 18px;
+  transform: translateX(-50%) rotate(-2deg);
+  background-color: rgba(214, 211, 209, 0.7);
+}
+
+#intro #letter .letter-photo img {
+  display: block;
+  width: 100%;
+  height: 98px;
+  object-fit: cover;
+}
+
+#intro #letter .letter-photo span {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  font-size: 16px;
+  line-height: 22px;
+  color: #78716c;
+}
+
+#intro #letter .letter-signoff {
+  margin: 0;
+  font-size: 22px;
+  color: #57534e;
+}
+
+#intro #letter .letter-sign {
+  margin: 0;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 30px;
+  padding-top: 6px;
+  color: #d2691e;
+}
+
+/* Founder letter on phones: wider paper, tighter padding and a smaller photo so more words fit per line */
+@media all and (max-width: 575.98px) {
+  #intro #letter {
+    width: 94%;
+    padding: 26px 14px 12px 32px;
+    font-size: 17px;
+  }
+
+  #intro #letter::after {
+    left: 22px;
+  }
+
+  #intro #letter .letter-photo {
+    width: 84px;
+    margin: 0 0 4px 10px;
+    padding: 5px 5px 18px;
+  }
+
+  #intro #letter .letter-photo img {
+    height: 74px;
+  }
+
+  #intro #letter .letter-photo span {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
 /* Homepage: one column below 1280px, intro (min 580px) + articles from 1280px up */
 @media all and (max-width: 1279.98px) {
   /* Footer lives in .home-side in the markup; in one column, flatten it so the footer stays below the articles */
@@ -490,6 +652,7 @@ blockquote::after {
     z-index: 1;
     width: max(580px, 33.333vw);
     height: 100vh;
+    overflow-y: auto;
     display: flex;
     flex-direction: column;
     background-color: #fff;
@@ -499,7 +662,13 @@ blockquote::after {
   .home #intro {
     flex: 1;
     margin-bottom: 0;
+    padding-top: 10px;
+    padding-bottom: 0;
     box-shadow: none;
+  }
+
+  .home #intro #letter {
+    margin: 16px 0 14px;
   }
 
   /* Same 20px as the gap between articles (.FeaturedImgBanner margin-bottom), which also gives the last article's bottom gap */
